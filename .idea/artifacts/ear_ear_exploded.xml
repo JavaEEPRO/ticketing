@@ -1,0 +1,30 @@
+<component name="ArtifactManager">
+  <artifact type="exploded-ear" name="ear:ear exploded">
+    <output-path>$PROJECT_DIR$/ear/target/tickets</output-path>
+    <properties id="maven-jee-properties">
+      <options>
+        <exploded>true</exploded>
+        <module>ear</module>
+        <packaging>ear</packaging>
+      </options>
+    </properties>
+    <root id="root">
+      <element id="javaee-facet-resources" facet="ear/javaeeApplication/JavaEE" />
+      <element id="directory" name="META-INF">
+        <element id="file-copy" path="$PROJECT_DIR$/ear/target/tickets/META-INF/MANIFEST.MF" />
+      </element>
+      <element id="dir-copy" path="$PROJECT_DIR$/ear/src/main/application" />
+      <element id="archive" name="bll-1.0-SNAPSHOT.jar">
+        <element id="artifact" artifact-name="bll:ejb exploded" />
+      </element>
+      <element id="directory" name="lib">
+        <element id="library" level="project" name="Maven: org.springframework:spring-core:5.1.3.RELEASE" />
+        <element id="library" level="project" name="Maven: org.springframework:spring-jcl:5.1.3.RELEASE" />
+        <element id="library" level="project" name="Maven: javax.persistence:persistence-api:1.0" />
+      </element>
+      <element id="archive" name="web-1.0-SNAPSHOT.war">
+        <element id="artifact" artifact-name="web:war exploded" />
+      </element>
+    </root>
+  </artifact>
+</component>

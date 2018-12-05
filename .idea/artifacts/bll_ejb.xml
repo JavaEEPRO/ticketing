@@ -1,0 +1,14 @@
+<component name="ArtifactManager">
+  <artifact type="ejb-jar" name="bll:ejb">
+    <output-path>$PROJECT_DIR$/bll/target</output-path>
+    <properties id="maven-jee-properties">
+      <options>
+        <module>bll</module>
+        <packaging>ejb</packaging>
+      </options>
+    </properties>
+    <root id="archive" name="bll-1.0-SNAPSHOT.jar">
+      <element id="artifact" artifact-name="bll:ejb exploded" />
+    </root>
+  </artifact>
+</component>
