@@ -1,7 +1,6 @@
 package si.inspirited.domain;
 
 import org.springframework.lang.Nullable;
-
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
@@ -114,5 +113,11 @@ public class Ticket {
     }
     public void setActive(boolean active) {
         this.active = active;
+    }
+
+    @Override
+    public String toString() {
+        String res = "\n============================Ticket=============================\nin-memory entity link: { " + super.toString() + " }\nid: " + this.getId() + "\nbus: " + this.getBus()  + "\nseat place: " + this.getPlace()  + "\nticket owner: " + this.getOwner() + "\ndate of purchase: " + this.getSold()  + "\ndestination point: " + this.getEndPoint() + "\nwhen arrives: " + this.getArrive()  + "\nstarts from: " + this.getStartPoint() + "\nstarts at: " + this.getStart()  + "\nis active: " + this.isActive() + "\n===============================================================\n";
+        return res;
     }
 }

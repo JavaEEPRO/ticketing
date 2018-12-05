@@ -13,9 +13,9 @@
     </annotationProcessing>
     <bytecodeTargetLevel>
       <module name="bll" target="11" />
-      <module name="ear" target="1.7" />
+      <module name="ear" target="11" />
       <module name="ticketing" target="1.5" />
-      <module name="web" target="1.7" />
+      <module name="web" target="11" />
     </bytecodeTargetLevel>
   </component>
   <component name="JavacSettings">
